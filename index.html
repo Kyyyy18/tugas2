@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download FC25 | Bagas31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function updateClock() {
+        const now = new Date();
+
+        let hours = now.getHours().toString().padStart(2, '0');
+        let minutes = now.getMinutes().toString().padStart(2, '0');
+        let seconds = now.getSeconds().toString().padStart(2, '0');
+        document.getElementById('digital-clock').textContent = `${hours}:${minutes}:${seconds}`;
+
+        const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+        const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+        
+        let day = days[now.getDay()];
+        let date = now.getDate();
+        let month = months[now.getMonth()];
+        let year = now.getFullYear();
+        
+        document.getElementById('date-display').textContent = `${day}, ${date} ${month} ${year}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); 
+</script>
+
+</script>
+
+<body>
+    <header>
+        <div id="date-time-container">
+            <div id="digital-clock"></div>
+            <div id="date-display"></div>
+        </div>        
+        <h1 class="logo">FC25</h1>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="images (2).jpg"> STEAM</a></li>
+                <li><a href="#"><img src="EA APPS.jpg" alt="EA Apps"> EA APPS</a></li>
+                <li><a href="#"><img src="EPIC GAMES.jpg" alt="Epic Games"> EPIC GAMES</a></li>
+                <li><a href="#"><img src="PlayStation_logo.svg.webp" alt="PlayStation"> PlayStation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Download FC 25 on STEAM</h1>
+            <p><small>MAR 26, 2025</small></p>
+    
+            <button class="download-btn" onclick="window.location.href='https://store.steampowered.com/app/2669320/EA_SPORTS_FC_25/'">
+                Download Steam
+            </button>
+            <img src="FC25 LOGO.webp" alt="FC25 Logo">
+            
+            <h1>EA FC25 STEAM</h1>
+            <p>EA Sports FC 25 adalah permainan video sepak bola mendatang...</p>
+            <img src="LEWA.avif" alt="EA Sports FC 25">
+
+            <h2>INFORMATION AND HOW TO DOWNLOAD?</h2>
+            <p><strong>Tahun Rilis:</strong> 27 September 2024<br>
+            <strong>Genre:</strong> Olahraga <br>
+            <strong>Developer:</strong> EA Vancouver dan EA Romania <br>
+            <strong>Publisher:</strong> EA Sports</p>
+            <img src="GAMEPLAY.webp" alt="EA Sports FC 25 Header">
+        </article>
+
+        <aside>
+            <input type="text" placeholder="Search here..">
+            <button>🔍</button>
+            <h2>Kategori</h2>
+            <ul>
+                <li>Sport</li>
+                <li>Arcade</li>
+                <li>Racing</li>
+                <li>WAR STRATEGY</li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
