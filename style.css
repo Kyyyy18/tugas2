@@ -1,0 +1,131 @@
+#date-time-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007A33;
+    background: fafafa;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+#digital-clock {
+    font-size: 18px;
+}
+
+#date-display {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    font-family: Impact, Haettenschweiler, 'Narrow Bold', sans-serif;
+    background: #fafafa;
+    color: #007A33;
+    padding: 25px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #040404;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav ul li a img {
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    gap: 20px;
+}
+
+article {
+    color: #fafafa;
+    flex: 2;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.1);
+}
+
+aside {
+    flex: 1;
+    background: rgb(225, 222, 222);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn {
+    display: block;
+    background: #3f454e;
+    color: rgb(5, 255, 84);
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background: #0056b3;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fa0505;
+    border-radius: 4px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
